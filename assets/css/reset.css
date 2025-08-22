@@ -1,0 +1,40 @@
+span, applet, object, iframe,
+h1, h2, h3, h5, h6, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, ins, kbd, q, s, samp,
+b, u, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, hgroup, 
+menu, nav, output, ruby, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+ol, ul {
+	list-style: none;
+}
+
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+button {
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	font-weight: inherit;
+	padding: 0;
+	border: none;
+	background-color: unset;
+}

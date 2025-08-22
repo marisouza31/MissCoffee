@@ -1,0 +1,341 @@
+:root{
+    --marrom: #421E12;
+    --marrom-chocolate: #814827; 
+    --marrom-clarinho: #C1864A;
+    --marrom-escuro: #512814;
+    --marrom-esverdeado: #433021;
+    --marrom-opaco: #55382c;
+    --branco: #fdfdfd;
+    --amarelo: #f2ab1a;
+    --cinza-claro: #a6a6a6;
+    --cinza-escuro: #cbcbcb;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+/* NAV PRINCIPAL */
+.cabecalho__nav {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 40px;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+  display: flex;
+}
+
+main {
+  margin-top: 100px;
+}
+
+/* LINHA: menu hamburguer, título, ícones */
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+/* TÍTULO */
+.cabecalho__nav--titulo {
+  font-family: 'Great Vibes', cursive;
+  font-size: 28px;
+  color: var(--marrom);
+  flex-grow: 1;
+  text-align: center;
+}
+
+/* MENU DE LINKS (em telas grandes) */
+.cabecalho__nav--lista {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+  text-align: center;
+  color: var(--marrom-chocolate);
+  z-index: 10;
+}
+
+.cabecalho__lista--link {
+  text-decoration: none;
+  color: var(--marrom-chocolate);
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.cabecalho__lista--link:hover {
+  text-decoration: none;
+  color: var(--marrom-clarinho);
+}
+
+/* ÍCONES */
+.cabecalho__nav--icons {
+  display: flex;
+  gap: 5px;
+  z-index: 10;
+}
+
+.cabecalho__icons--item img {
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+}
+
+/* MENU TOGGLE (hamburguer) escondido por padrão */
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: var(--marrom);
+}
+
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+  .nav-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .cabecalho__nav--titulo {
+    font-size: 24px;
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Esconde menu completo */
+  .cabecalho__nav--lista {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: var(--branco);
+    padding: 10px 0;
+    gap: 10px;
+    border-top: 1px solid #ccc;
+    
+  }
+
+  /* Mostra quando ativo */
+  .cabecalho__nav--lista.active {
+    display: flex;
+  }
+
+  .cabecalho__nav--icons {
+    gap: 5px;
+  }
+
+  .cabecalho__lista--link {
+  text-decoration: none;
+  color: var(--marrom-chocolate);
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.cabecalho__lista--link:hover {
+  text-decoration: none;
+  color: var(--marrom-clarinho);
+}
+}
+
+@media screen and (max-width: 768px) {
+  .cabecalho__nav {
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .cabecalho__nav--titulo {
+    order: 2;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .cabecalho__nav--icons {
+    order: 3;
+  }
+
+  .cabecalho__nav--lista {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    gap: 10px;
+    border-top: 1px solid #ccc;
+    order: 4;
+  }
+
+  .cabecalho__nav--lista.active {
+    display: flex;
+  }
+  
+}
+
+/*Responsividade em telas maiores sem o icone de menu*/
+@media screen and (min-width: 769px) {
+  .nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu-toggle {
+    display: none !important;
+    
+  }
+
+  .cabecalho__nav--titulo {
+    order: 1;
+    font-size: 28px;
+    text-align: left;
+    flex: 0 0 auto; /* ocupa só o espaço necessário */
+  }
+
+  .cabecalho__nav--lista {
+    order: 2;
+    display: flex !important;
+    flex-grow: 1;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .cabecalho__nav--icons {
+    order: 3;
+    display: flex;
+    gap: 20px;
+  }
+  
+}
+
+
+/*  HOME    */
+.conteudo__home{
+    display: flex;
+    justify-content: space-around;
+    height: 60vh;
+     position: relative; 
+}
+
+.conteudo__home--esquerda{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;  /* aumenta a distância do topo da tela */
+}
+
+
+.conteudo__home--graocafedeitado{
+    height: 90px;
+    width: 90px;
+    position: absolute;
+    right: 85%;          /* afasta da lateral direita */
+    top: 80px;           /* altura desejada */
+}
+
+.conteudo__home--txt{
+    font-size: 20px;
+    color: #C1864A;
+    font-family: 'Comfortaa';
+}
+
+.conteudo__home--titulo{
+    font-size: 60px;
+    width: 400px;
+    color: #421E12;
+    font-family: 'Katibeh', cursive;
+}
+
+.conteudo__home--btn{
+    margin-top: 30px;
+    font-size: 16px;
+    background-color: var(--marrom-escuro);
+    padding: 9px;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    width: 120px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.conteudo__home--btn:hover{
+  background-color: var(--marrom-chocolate);
+}
+
+.conteudo__img--fundo{
+    width: 710px;
+    position: absolute;
+    right: 0;
+    top: -70px;
+}
+
+.conteudo__img--xicara{
+    width: 500px;
+    position: absolute;
+    right: 0px;
+}
+
+.conteudo__img--cel{
+  display: none;
+}
+
+@media screen and (max-width: 768px){
+  .conteudo__img--fundo, 
+  .conteudo__img--xicara{
+    display: none;
+  }
+
+  .conteudo__home--titulo{
+    width: 320px;
+  }
+
+  .conteudo__home{
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    text-align: center;
+  }
+
+  .conteudo__img--cel{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .conteudo__home--container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  .conteudo__home--btn{
+    margin: 0 auto;
+    width: 30%;
+     margin-top: 2rem; 
+  }
+
+  .conteudo__home--graocafedeitado{
+    height: 80px;
+    width: 80px;
+    right: 65%;          /* afasta da lateral direita */
+    top: 80px;           /* altura desejada */
+}
+
+}

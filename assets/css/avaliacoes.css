@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#testimonials {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 60px;
+    padding: 32px 8%;
+}
+
+.avaliacoes {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 40px;
+  margin: 10px 0;
+  color: #814827;
+}
+.swiper {
+    width: 100%;
+    height: 329px;
+    padding-bottom: 60px;
+}
+
+@media screen and (max-width: 768px){
+    .swiper {
+    width: 100%;
+    height: 410px;
+    padding-bottom: 60px;
+}
+}
+
+.swiper-slide {
+    background-color: #421E12;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    justify-content: center;
+    box-shadow: 0px 0px 20px 0px rgba(92, 115, 160, 0.07);
+    padding: 34px;
+    border-radius: 12px;
+}
+
+.testimonial-rate {
+    display: flex;
+    gap: 2px;
+}
+
+.testimonial-rate i {
+    color: #f9b707;
+}
+
+.testimonial-quote {
+    color: white;
+    font-size: 16px;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.author-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.author-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.author-info h3 {
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+}
+
+.author-info p {
+    font-size: 12px;
+    color: white;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    background-color: #fff;
+    width: 25px;
+    height: 25px;
+    color: #421E12;
+    border: 1px solid #f9fafb;
+    border-radius: 100%;
+    box-shadow: 0px 0px 20px 0px rgba(92, 115, 160, 0.2);
+}
+
+.swiper-button-prev::after {
+    content: '\f053';
+    font-family: 'Font Awesome 5 free';
+    font-weight: 900;
+    font-size: 14px;
+}
+
+.swiper-button-next::after {
+    content: '\f054';
+    font-family: 'Font Awesome 5 free';
+    font-weight: 900;
+    font-size: 14px;
+}
+
+.swiper-button-prev {
+    left: 3px;
+}
+
+.swiper-button-next {
+    right: 3px;
+}
+
+.swiper-pagination-bullet{
+    background-color: #421E12;
+}

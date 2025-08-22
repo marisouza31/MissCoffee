@@ -1,0 +1,183 @@
+*{
+  box-sizing: border-box;
+}
+
+.banner-sobrenos {
+  position: relative;
+  background-color: #e6e2df;
+  padding: 30px 20px;
+  text-align: center;
+  overflow: visible;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.15),
+              0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.banner-sobrenos__conteudo {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;  
+  gap: 12px;             
+}
+
+.sobre-nos {
+  position: relative;
+  padding: 80px 40px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.sobre-nos h1 {
+  font-size: 2.8em;
+  color: #4b1d0d;
+  font-weight: normal;
+  font-family: 'Bubblegum Sans', cursive;
+  margin-bottom: 20px;
+}
+
+.sobre-nos h1 span {
+  display: block;
+  font-family: 'Comforter Brush', cursive;
+  font-size: 1.4em;
+  color: #4b1d0d;
+  margin-top: 5px;
+}
+.sobre-nos p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #3e1e0d;
+  margin-bottom: 30px; /* espaço entre texto e imagem */
+  width: 650px;
+  margin: 0 auto;
+  
+}
+
+/* imagem final do texto sobrenos */
+.imagem-final {
+  display: block;
+  height: 740px;
+  margin: 0 auto;
+  position: absolute;
+  right: -38px;
+}
+
+.imagem-final_container{
+    position: relative;
+    max-width: 100%;
+    margin-bottom: 25rem;
+}
+
+@media screen and (max-width: 450px){
+  .imagem-final {
+  height: 220px;
+}
+
+.imagem-final_container{
+    margin-bottom: 10rem;
+}
+}
+
+@media screen and (max-width: 389px){
+  .imagem-final {
+  height: 185px;
+}
+
+.imagem-final_container{
+    margin-bottom: 9rem;
+}
+}
+
+.sobre-nos strong {
+  font-weight: bold;
+}
+
+/*Icone sobre o titulo */
+.titulo-container {
+  position: relative;
+  display: inline-block;
+}
+
+.coracoes-img {
+  position: absolute;
+  top: -27px;    /* sobe a imagem */
+  right: 5px;  /* alinha ao final da palavra */
+  width: 70px;   /* ajuste o tamanho conforme necessário */
+  height: auto;
+}
+
+/* Media query para telas médias */
+@media screen and (max-width: 1024px) {
+  .sobre-nos {
+    padding: 6vw 4vw;
+  }
+  
+  .sobre-nos h1 {
+    font-size: 2.2em;
+  }
+  
+  .sobre-nos h1 span {
+    font-size: 1.2em;
+  }
+  
+  .sobre-nos p {
+    font-size: 1em;
+    max-width: 90%;
+  }
+  
+  .coracoes-img {
+    width: 55px;
+    top: -22px;
+    right: 4px;
+  }
+}
+
+/* Media query para telas pequenas */
+@media screen and (max-width: 768px) {
+  .sobre-nos {
+    padding: 5vw 3vw;
+  }
+  
+  .sobre-nos h1 {
+    font-size: 1.8em;
+  }
+  
+  .sobre-nos h1 span {
+    font-size: 1em;
+  }
+  
+  .sobre-nos p {
+    font-size: 1.1em;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: #3e1e0d;
+}
+  
+.coracoes-img {
+  position: absolute;
+  top: -23px;    /* sobe a imagem */
+  right: -20px;  /* alinha ao final da palavra */
+  width: 50px;   /* ajuste o tamanho conforme necessário */
+  height: auto;
+  }
+}
+
+/* Responsivo */
+@media screen and (max-width: 768px) {
+  .banner-cafe__titulo {
+    font-size: 1.6em;
+  }
+
+  .banner-cafe__botao {
+    max-width: 100%; /* no mobile ocupa toda a largura */
+  }
+
+  .banner-sobrenos__conteudo {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; /* organiza em coluna */
+  align-items: center;    /* centraliza */
+  gap: 5px;              /* espaço entre título, texto e botão */
+}
+}

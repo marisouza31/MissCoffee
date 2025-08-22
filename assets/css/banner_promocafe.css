@@ -1,0 +1,134 @@
+.banner-cafe {
+  position: relative;
+  background-color: #e6e2df;
+  padding: 30px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible; /* Permitir que grãos saiam para fora */
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.15);
+  margin-top: 8rem;  /* aumenta a distância do topo da tela */
+  gap: 40px; /* espaço entre texto e imagem */
+}
+
+.banner-cafe__conteudo {
+  display: flex;
+  flex-direction: row; /* lado a lado */
+  align-items: center;
+  gap: 45px;
+  margin: 0 auto;
+}
+
+.banner-cafe__texto-bloco {
+  flex: 1;              /* ocupa o espaço restante */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner-cafe__imagem {
+  width: auto;       
+  max-width: 320px;    
+  height: auto;
+}
+
+
+.banner-cafe__titulo {
+  font-family: 'Katibeh', cursive;
+  color: var(--marrom);
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.banner-cafe__texto {
+  color: #3e1e0d;
+  font-size: 17px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.banner-cafe__botao {
+  background-color: var(--marrom);
+  color: white;
+  border: none;
+  padding: 10px 20px;   /* Mais largura, mas controlada */
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  max-width: 150px;     /* Limita o comprimento */
+  text-align: center;  
+}
+
+.banner-cafe__botao:hover {
+  background-color: var(--marrom-chocolate);
+}
+
+/* Grãos de café */
+.grao {
+  position: absolute;
+  width: 86px; /* Aumentei de 60px para 80px */
+  height: auto;
+  z-index: 1;
+}
+
+.grao-esquerda {
+  top: -40px;    /* Saindo mais pra fora, mas mais afastado do canto */
+  left: 15px;    /* Afastado da borda esquerda */
+}
+
+.grao-direita {
+  bottom: -70px; /* Saindo mais pra fora, afastado do canto */
+  right: 19px;   /* Afastado da borda direita */
+  transform: rotate(-15deg);
+}
+
+/* Responsivo */
+@media screen and (max-width: 768px) {
+  .grao {
+    width: 45px;  /* Aumentado um pouco para telas menores */
+  }
+
+  .grao-esquerda {
+    top: -20px;
+    left: 10px;
+  }
+
+  .grao-direita {
+    bottom: -30px;
+    right: 15px;
+  }
+  
+}
+
+/* Responsivo */
+@media screen and (max-width: 768px) {
+  .banner-cafe__titulo {
+    font-size: 1.9em;
+  }
+  .banner-cafe {
+  position: relative;
+  background-color: #e6e2df;
+  padding: 30px 20px; /* Diminuído para reduzir altura */
+  text-align: center;
+  overflow: visible; /* Permitir que grãos saiam para fora */
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.15);
+  margin-top: 20px;  /* aumenta a distância do topo da tela */
+}
+
+ .banner-cafe__conteudo {
+    flex-direction: column;   /* Empilha o texto e imagem */
+    text-align: center;       /* Centraliza o texto */
+    gap: 20px;                /* Menor espaço entre itens */
+  }
+
+  .banner-cafe__imagem {
+    max-width: 200px;        
+    margin: 0 auto;         
+  }
+
+  .banner-cafe__texto-bloco {
+    align-items: center;      /* Centraliza conteúdo dentro do bloco */
+  }
+}
+

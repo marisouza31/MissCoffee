@@ -1,0 +1,108 @@
+header h1 {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 40px;
+  margin: 10px 0;
+  color: #814827;
+  text-align: center;
+}
+
+header h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  color: #95613D;
+  text-align: center;
+}
+
+/* Estrutura de cada seção (Fritos, Assados...) */
+.menu_salgados {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 15px;
+  background: #4a2e1e;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Imagem da categoria de salgados */
+.imagem_salgados {
+  width: 250px;
+  height: auto;
+  border-radius: 15px;
+  border: 8px solid  #AC6D36;
+  object-fit: cover;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+  margin-top: 94px; /* só as imagens descem mais */
+}
+
+/* Conteúdo de texto */
+section .conteudo {
+  flex: 1;
+}
+
+section h3 {
+  background-color: #AC6D36;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  display: inline-block;
+}
+
+/* Lista de itens */
+section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+section ul li {
+  font-size: 1rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  border-bottom: 1px dashed #ddd;
+  padding-bottom: 5px;
+}
+
+section ul li span {
+  font-weight: 600;
+  color: white;
+  margin-left: 15px; 
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .menu_salgados {
+    flex-direction: column; /* deixa os elementos em coluna */
+    align-items: center;    /* centraliza horizontalmente */
+    justify-content: center; /* centraliza verticalmente */
+    text-align: center;     /* garante que o texto fique centralizado */
+    padding: 20px;
+  }
+
+  .menu_salgados .conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* centraliza conteúdo horizontalmente */
+    justify-content: center; /* centraliza conteúdo verticalmente */
+    text-align: center;
+  }
+
+  .imagem_salgados {
+    margin-top: 20px; /* reduz a margem para ficar mais centralizada */
+    width: 80%; /* ajusta largura da imagem no mobile */
+    max-width: 300px;
+  }
+
+  section ul li {
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
