@@ -56,7 +56,7 @@
 /* imagem final do texto sobrenos */
 .imagem-final {
   display: block;
-  height: 740px;
+  height: 1050px;
   margin: 0 auto;
   position: absolute;
   right: -38px;
@@ -65,10 +65,75 @@
 .imagem-final_container{
     position: relative;
     max-width: 100%;
-    margin-bottom: 25rem;
+    margin-bottom: 34rem;
+}
+
+@media screen and (min-width: 2200px){
+  .imagem-final{
+    height: 1300px;
+  }
+
+  .imagem-final_container{
+    margin-bottom: 40rem;
+  }
+}
+
+@media screen and (max-width: 1660px){
+  .imagem-final{
+    height: 835px;
+  }
+
+  .imagem-final_container{
+    margin-bottom: 28rem;
+  }
+}
+
+@media screen and (max-width: 1440px){
+  .imagem-final{
+    height: 790px;
+  }
+
+  .imagem-final_container{
+    margin-bottom: 27rem;
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .imagem-final{
+    height: 560px;
+  }
+
+  .imagem-final_container{
+    margin-bottom: 18rem;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .imagem-final {
+    height: 430px;
+  }
+  
+  .imagem-final_container{
+    margin-bottom: 15rem;
+  }
+}
+
+.sobre-nos strong {
+  font-weight: bold;
 }
 
 @media screen and (max-width: 450px){
+  .imagem-final {
+    height: 260px;
+  }
+  
+  .imagem-final_container{
+    margin-bottom: 10rem;
+  }
+}
+
+
+@media screen and (max-width: 389px){
   .imagem-final {
   height: 220px;
 }
@@ -76,20 +141,6 @@
 .imagem-final_container{
     margin-bottom: 10rem;
 }
-}
-
-@media screen and (max-width: 389px){
-  .imagem-final {
-  height: 185px;
-}
-
-.imagem-final_container{
-    margin-bottom: 9rem;
-}
-}
-
-.sobre-nos strong {
-  font-weight: bold;
 }
 
 /*Icone sobre o titulo */

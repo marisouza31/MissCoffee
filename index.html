@@ -19,11 +19,14 @@
     <link rel="stylesheet" href="assets/css/menusalgados.css" type="text/css">
     <link rel="stylesheet" href="assets/css/avaliacoes.css" type="text/css">
     <link rel="stylesheet" href="assets/css/menucafe.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/combos__especiais.css">
+    <link rel="stylesheet" href="assets/css/combos__especiais.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/footer.css" type="text/css">
     <title>Miss Coffee - Cafeteria</title>
 </head>
 <body>
+  <!--inicio do cabeçalho-->
     <header class="cabecalho">
+      <!--inicio da navbar-->
 <nav class="cabecalho__nav">
     <h2 class="cabecalho__nav--titulo">Miss Coffee</h2>
 
@@ -39,10 +42,11 @@
       <li><a href="#home" class="cabecalho__lista--link">Home</a></li>
       <li><a href="#sobrenos" class="cabecalho__lista--link">Sobre nós</a></li>
       <li><a href="#menus" class="cabecalho__lista--link">Menus</a></li>
-      <li><a href="#" class="cabecalho__lista--link">Combos Especiais</a></li>
-      <li><a href="#" class="cabecalho__lista--link">Contatos</a></li>
+      <li><a href="#combosespeciais" class="cabecalho__lista--link">Combos Especiais</a></li>
+      <li><a href="#contatos" class="cabecalho__lista--link">Contatos</a></li>
     </ul>
 </nav>
+<!--fim da navbar-->
     </header>
 
   <!-- Home -->
@@ -59,7 +63,12 @@
                 <img src="assets/img/back_graos.png" alt="grãos de café esparramados" class="conteudo__img--fundo">
                 <img src="assets/img/xícara de café.png" alt="xícara de café" class="conteudo__img--xicara">
                 <img src="assets/img/xicaraegraos.png" alt="Xícara de café com grãos de fundo" class="conteudo__img--cel">
-            </div>
+            
+          <!-- Selo clicável -->
+            <a href="quiz.html" class="conteudo__home--selo">
+                <img src="assets/img/selo.png" alt="Selo de qualidade do café">
+            </a>
+              </div>
         </section>
           <!--Fim da Home -->
 
@@ -94,10 +103,10 @@
       </div>
       <p>
         Na <strong>Miss Coffee</strong>, acreditamos que o café é mais do que uma bebida:
-         é um momento de conexão, 
-        aconchego e inclusão. Nossa cafeteria online nasceu com o propósito de tornar
-         essa experiência acessível para todos, oferecendo não apenas sabores únicos e de qualidade, mas também um 
-         espaço digital pensado para acolher cada pessoa.
+         é um momento de conexão, aconchego e inclusão. Nossa cafeteria online nasceu com o 
+         propósito de tornar essa experiência acessível para todos, oferecendo não apenas
+         sabores únicos, mas também um espaço digital pensado para acolher 
+         cada pessoa.
       </p>
     </div>
      <!-- imagem no final da pagina, depois do texto -->
@@ -261,9 +270,9 @@
       <!-- Fim da pagina de menus salgados -->
 
        <!-- inicio da pagina de menu cafe-->
-        <section id="menu-cafe">
-       <h1 class="h1-cafe">Vai um</h1>
-    <h2 class="h2-cafe">CAFÉ AI?</h2>
+<section id="menu-cafe">
+  <h1 class="h1-cafe">Vai um</h1>
+  <h2 class="h2-cafe">CAFÉ AI?</h2>
 
   <div class="menu-container">
     <!-- Card 1 -->
@@ -300,13 +309,86 @@
     </div>
   </div>
 
-  <div class="more-options">Ver mais opções</div>
+  <!-- Botão -->
+  <div class="more-options-cafes">Ver mais opções</div>
+
+  <!-- Menu escondido -->
+     <div class="extra-menu">
+    <div class="menu-container">
+    <!-- Card 1 -->
+    <div class="card">
+      <img src="assets/img/capuccino.jpg" alt="Chá">
+      <div class="card-content">
+        <div class="tag">Café</div>
+        <p>Capuccino</p>
+        <p>Espuma</p>
+        <p class="price">R$9,99</p>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <img src="assets/img/cafe-preto.jpg" alt="Chocolate">
+      <div class="card-content">
+        <div class="tag">Café</div>
+        <p>Café preto</p>
+        <p>Pingado</p>
+        <p class="price">R$9,99</p>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <img src="assets/img/mocha.jpg" alt="Gelados">
+      <div class="card-content">
+        <div class="tag">Café</div>
+        <p>Mocha</p>
+        <p>Leite</p>
+        <p class="price">R$9,99</p>
+      </div>
+    </div>
+
+  <!-- Card 4 -->
+     <div class="card">
+      <img src="assets/img/cafe-expresso.jpg" alt="Gelados">
+      <div class="card-content">
+        <div class="tag">Café</div>
+        <p>Expresso</p>
+        <p>Intenso</p>
+        <p class="price">R$9,99</p>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
   </section>
    <!-- Fim da pagina de menu cafe -->
 
-   <!--Inicio dá seção combos especiais-->
+   <section class="banner-cafe">
+  <img src="assets/img/grao_cafe2.png" alt="Grão de café à esquerda" class="grao grao-esquerda">
+  
+  <div class="banner-cafe__conteudo">
+    <!-- Banner de promoção de namorados-->
+    <div class="banner-cafe__texto-bloco">
+      <h2 class="banner-cafe__titulo">Dia dos Namorados:</h2>
+      <p class="banner-cafe__texto">
+        Neste Dia dos Namorados, declare seu amor de um jeito doce e <br> especial!
+            Preparamos um combo encantador que vem com um milk<br>shake delicioso, 
+            um ursinho superfofo e uma caixa de chocolates<br>irresistível.
+      </p>
+      <button class="banner-cafe__botao"><a href="#combosEspeciais">Ver combos</a></button>
+    </div>
 
-    <section class="conteudo__combos">
+    <!-- Imagem do banner de combos-->
+    <img src="assets/img/combo namorados.png" alt="Pão de queijo" class="banner-cafe__imagem">
+  </div>
+  
+  <img src="assets/img/grao_cafe.png" alt="Grão de café à direita" class="grao grao-direita">
+</section>
+<!--fim do banner de promoção namoraodos-->
+
+   <!--Inicio dá seção combos especiais-->
+    <section id="combosespeciais" class="conteudo__combos">
       <section class="conteudo__hora-cafe">
         <h2 class="hora-cafe__titulo">HORA</h2>
 
@@ -321,13 +403,14 @@
         </div>
     </section>
 
-      <h3 class="conteudo__combos--subtitulo">Combos <span class="conteudo__combos--upercase">Especiais</span></h3>
+      <h1 id="combosEspeciais" class="h1-cafe">Combos</h1>
+      <h2 class="h2-cafe">ESPECIAIS</h2>
 
       <ul class="conteudo__combos--lista">
         <li class="conteudo__combos--item">
           <img src="assets/img/saco_cafe.png" alt="Pacote de café torrado" class="conteudo__listaitem--img">
           <h4 class="conteudo__listaitem--titulo">Café Torrada</h4>
-          <p class="conteudo__listaitem--txt">Dia do Amigo</p>
+          <p class="conteudo__listaitem--txt">Dia dos Avós</p>
           <p class="conteudo__listaitem--preco">R$ 36,99</p>
           <button type="button" class="conteudo__listaitem--comprar">Comprar</button>
         </li>
@@ -352,9 +435,26 @@
           <p class="conteudo__listaitem--preco">R$ 42,99</p>
           <button type="button" class="conteudo__listaitem--comprar">Comprar</button>
         </li>
+         <li class="conteudo__combos--item">
+          <img src="assets/img/caneca-personalizada.jpg" alt="Xícara de café personalizada" class="conteudo__listaitem--img">
+          <h4 class="conteudo__listaitem--titulo">Caneca Personalizada</h4>
+          <p class="conteudo__listaitem--txt">Dia do Amigo</p>
+          <p class="conteudo__listaitem--preco">R$ 37,90</p>
+          <button type="button" class="conteudo__listaitem--comprar">Comprar</button>
+        </li>
+        <li class="conteudo__combos--item">
+          <img src="assets/img/cafe-arabica.webp" alt="cafe torrado arabica" class="conteudo__listaitem--img">
+          <h4 class="conteudo__listaitem--titulo">Café Torrado e Moído Arábica</h4>
+          <p class="conteudo__listaitem--txt">Extra forte</p>
+          <p class="conteudo__listaitem--preco">R$ 37,90</p>
+          <button type="button" class="conteudo__listaitem--comprar">Comprar</button>
+        </li>
       </ul>
+      <div class="see-more">Ver mais opções</div>
     </section>
+    <!--fim da seção de combos espeicias-->
 
+      <!--inicio da pagina de avaliações-->
        <section id="testimonials">
         <h2 class="avaliacoes">Avaliações:</h2>
 
@@ -377,7 +477,7 @@
                     </div>
 
                     <blockquote class="testimonial-quote">
-                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis voluptates corporis perspiciatis ipsa dignissimos nemo beatae quia eligendi placeat."
+                       "Cardápio incrível, preços justos e atendimento impecável. Melhor cafeteria da região!"
                     </blockquote>
                     </div>
                 </div>
@@ -399,7 +499,7 @@
                     </div>
 
                     <blockquote class="testimonial-quote">
-                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis voluptates corporis perspiciatis ipsa dignissimos nemo beatae quia eligendi placeat."
+                       "Café delicioso, lanches variados e funcionários sempre atenciosos. Recomendo!"
                     </blockquote>
                     </div>
                 </div>
@@ -421,7 +521,7 @@
                     </div>
 
                     <blockquote class="testimonial-quote">
-                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis voluptates corporis perspiciatis ipsa dignissimos nemo beatae quia eligendi placeat."
+                       "Ambiente aconchegante, preço acessível e cardápio cheio de opções saborosas."
                     </blockquote>
                     </div>
                 </div>
@@ -443,7 +543,7 @@
                     </div>
 
                     <blockquote class="testimonial-quote">
-                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis voluptates corporis perspiciatis ipsa dignissimos nemo beatae quia eligendi placeat."
+                       "Funcionários simpáticos, café fresquinho e ótimo custo-benefício. Adoro a Miss Coffe!"
                     </blockquote>
                     </div>
                 </div>
@@ -465,7 +565,7 @@
                     </div>
 
                     <blockquote class="testimonial-quote">
-                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis voluptates corporis perspiciatis ipsa dignissimos nemo beatae quia eligendi placeat."
+                       "Excelente atendimento, preços honestos e um cardápio que dá vontade de pedir tudo."
                     </blockquote>
                     </div>
                 </div>
@@ -487,7 +587,7 @@
                     </div>
 
                     <blockquote class="testimonial-quote">
-                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis voluptates corporis perspiciatis ipsa dignissimos nemo beatae quia eligendi placeat."
+                       "Miss Coffe é perfeita: café de qualidade, preços bons e equipe super prestativa."
                     </blockquote>
                     </div>
                 </div>
@@ -498,8 +598,41 @@
             <div class="swiper-button-next"></div>
         </div>
     </section>
-
 </main>
+  <!-- fim da pagina de avaliações-->
+
+<!--inicio do footer-->
+  <footer id="contatos" class="rodape">
+        <div class="rodape__container">
+          <img src="assets/img/graos_de_cafe.png" alt="Grãos de café esparramados" class="rodape__grao1">
+          <div class="rodape__infos">
+            <h2 class="rodape__titulo">Nossos Contatos:</h2>
+            <ul class="rodape__lista">
+              <li class="rodape__lista--item">
+                <img src="assets/img/icone_telefone.png" alt="Icone de telefone" class="rodape__lista--img">
+                <p class="rodape__lista--txt">+55 (11) 4922-8922</p>
+              </li>
+              <li class="rodape__lista--item">
+                <img src="assets/img/icone_email.png" alt="Icone de email" class="rodape__lista--img">
+                <p class="rodape__lista--txt">misscoffee@gmail.com</p>
+              </li>
+              <li class="rodape__lista--item">
+                <p class="rodape__lista--txt">Endereço:</p>
+              </li>
+              <li class="rodape__lista--item">
+                <img src="assets/img/icone_localização.png" alt="Icone de localização" class="rodape__lista--img">
+                <p class="rodape__lista--txt">Rua Lapa Tito 45, Vila Romana</p>
+              </li>
+              <li class="rodape__lista--item">
+                <img src="assets/img/icone_instagram.png" alt="Icone do instagram" class="rodape__lista--img">
+                <p class="rodape__lista--txt">@misscoffee.oficial</p>
+              </li>
+            </ul>
+          </div>
+          <img src="assets/img/back_graos.png" alt="Grãos de café esparramados" class="rodape__grao2">
+        </div>
+  </footer>
+  <!--fim do footer-->
 
 <!--inicio do script de avaliações-->
  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

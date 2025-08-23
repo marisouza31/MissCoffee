@@ -35,9 +35,9 @@
     /* Logo dentro do card */
     .quiz-logo {
         position: absolute;
-        top: 15px;
+        top: -5px;
         right: 15px;
-        width: 60px;
+        width: 100px;
         height: auto;
         z-index: 10;
     }

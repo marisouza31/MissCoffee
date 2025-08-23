@@ -84,8 +84,8 @@ main {
 }
 
 .cabecalho__icons--item img {
-  width: 10px;
-  height: 10px;
+  width: 13px;
+  height: 13px;
   cursor: pointer;
 }
 
@@ -97,6 +97,25 @@ main {
   color: var(--marrom);
 }
 
+/* ===== Selo Home ===== */
+.conteudo__home--selo {
+  position: absolute;   
+  top: 20px;           
+  right: 20px;         
+  display: inline-block;
+}
+
+.conteudo__home--selo img {
+  width: 90px;  
+  height: auto; 
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.conteudo__home--selo img:hover {
+  transform: scale(1.1); /* efeito de zoom no hover */
+}
+
 
 /* Responsividade */
 @media screen and (max-width: 768px) {
@@ -105,14 +124,6 @@ main {
     justify-content: space-between;
     align-items: center;
   }
-
-  .cabecalho__nav--titulo {
-    font-size: 24px;
-    flex-grow: 1;
-    text-align: center;
-    margin: 0;
-  }
-
   .menu-toggle {
     display: block;
   }
@@ -135,10 +146,6 @@ main {
     display: flex;
   }
 
-  .cabecalho__nav--icons {
-    gap: 5px;
-  }
-
   .cabecalho__lista--link {
   text-decoration: none;
   color: var(--marrom-chocolate);
@@ -150,9 +157,12 @@ main {
   text-decoration: none;
   color: var(--marrom-clarinho);
 }
+.cabecalho__icons--item img {
+  width: 13px;
+  height: 13px;
+  cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
   .cabecalho__nav {
     flex-wrap: wrap;
     flex-direction: row;
@@ -165,6 +175,8 @@ main {
     order: 2;
     text-align: center;
     font-size: 24px;
+    margin: 0;
+    flex-grow: 1;
   }
 
   .cabecalho__nav--icons {
@@ -185,7 +197,13 @@ main {
   .cabecalho__nav--lista.active {
     display: flex;
   }
-  
+
+.conteudo__home--selo img {
+  width: 75px;  
+  height: auto; 
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
 }
 
 /*Responsividade em telas maiores sem o icone de menu*/
@@ -214,6 +232,8 @@ main {
     flex-grow: 1;
     justify-content: center;
     gap: 40px;
+    align-items: center;
+    padding: 0 30px;
   }
 
   .cabecalho__nav--icons {
@@ -223,7 +243,6 @@ main {
   }
   
 }
-
 
 /*  HOME    */
 .conteudo__home{
@@ -295,6 +314,26 @@ main {
   display: none;
 }
 
+@media screen and (max-width: 1660px){
+  .conteudo__home{
+    height: 65vh;
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .conteudo__img--fundo{
+    width: 500px;
+  }
+
+  .conteudo__img--xicara{
+    width: 400px;
+  }
+
+  .conteudo__home{
+    height: auto;
+  }
+}
+
 @media screen and (max-width: 768px){
   .conteudo__img--fundo, 
   .conteudo__img--xicara{
@@ -334,8 +373,7 @@ main {
   .conteudo__home--graocafedeitado{
     height: 80px;
     width: 80px;
-    right: 65%;          /* afasta da lateral direita */
-    top: 80px;           /* altura desejada */
+    right: 65%;    
+    top: 80px;           
 }
-
 }

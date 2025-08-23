@@ -1,79 +1,93 @@
-    
-    .h1-cafe {
-    font-family: 'Kaushan Script', cursive;
-    font-size: 40px;
-    margin: 10px 0;
-    color: #814827;
-    text-align: center;
-    }
 
-    .h2-cafe {
-    font-family: 'Inter', sans-serif;
-    font-size: 24px;
-    color: #95613D;
-    text-align: center;
-    }
+.h1-cafe {
+font-family: 'Kaushan Script', cursive;
+font-size: 40px;
+margin: 10px 0;
+color: #814827;
+text-align: center;
+}
 
-    .menu-container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 25px;
-    margin-top: 30px;
-    flex-wrap: wrap;
-    }
+.h2-cafe {
+font-family: 'Inter', sans-serif;
+font-size: 24px;
+color: #95613D;
+text-align: center;
+}
 
-    .card {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    width: 240px;
-    }
+.menu-container {
+display: flex;
+justify-content: center;
+align-items: flex-start;
+gap: 25px;
+margin-top: 30px;
+flex-wrap: wrap;
+}
 
-    .card img {
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 15px;
-    border: 4px solid #421E12;
-    flex-shrink: 0;
-    }
+.card {
+display: flex;
+align-items: center;
+gap: 12px;
+width: 240px;
+}
 
-    .card-content {
-    background: #421E12;
-    color: #fff;
-    padding: 10px;
-    border-radius: 10px;
-    flex: 1;
-    text-align: left;
-    }
+.card img {
+width: 120px;
+height: 120px;
+object-fit: cover;
+border-radius: 15px;
+border: 4px solid #421E12;
+flex-shrink: 0;
+}
 
-    .card-content .tag {
-    background: #975C30;
-    color: #fff;
-    font-size: 12px;
-    font-weight: bold;
-    padding: 2px 6px;
-    border-radius: 4px;
-    display: inline-block;
-    margin-bottom: 5px;
-    }
+.card-content {
+background: #421E12;
+color: #fff;
+padding: 10px;
+border-radius: 10px;
+flex: 1;
+text-align: left;
+}
 
-    .card-content p {
-    margin: 2px 0;
-    font-size: 13px;
-    }
+.card-content .tag {
+background: #975C30;
+color: #fff;
+font-size: 12px;
+font-weight: bold;
+padding: 2px 6px;
+border-radius: 4px;
+display: inline-block;
+margin-bottom: 5px;
+}
 
-    .price {
-    font-weight: bold;
-    margin-top: 3px;
-    color: white;
-    }
+.card-content p {
+margin: 2px 0;
+font-size: 13px;
+}
 
-    .more-options {
-    text-decoration: underline;
-    font-size: 12px;
-    text-align: center;
-    margin-top: 20px;
-    color: #421E12;
-    }
+.price {
+font-weight: bold;
+margin-top: 3px;
+color: white;
+}
+
+.more-options-cafes {
+text-align: center;
+margin-top: 20px;
+cursor: pointer;
+font-weight: bold;
+color: #4b1d0d;
+transition: 0.3s;
+font-size: 13px;
+text-decoration: underline;
+}
+.more-options-cafes:hover {
+  color: #95613D;
+}
+
+.extra-menu {
+  display: none;      
+  flex-direction: column;  
+  gap: 20px;
+  margin-top: 20px;
+  align-items: center;
+}
