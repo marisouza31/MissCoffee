@@ -5,12 +5,12 @@ const quizData = [
 ];
 
 const resultsMap = {
-    "0-0-0": { text: "Você é um Cappuccino! Aconchegante e equilibrado.", img: "assets/img-quiz/cafe-cappucino.png" },
+    "0-0-0": { text: "Você é um Cappuccino! Aconchegante e equilibrado.", img: "assets/img-quiz/cafe-cappucino.avif" },
     "0-0-1": { text: "Você é um Mocha! Doce e intenso.", img: "assets/img-quiz/cafe-mocha.png"},
     "0-0-2": { text: "Você é um Espresso! Direto e marcante.", img: "assets/img-quiz/cafe-expresso.png" },
     "0-1-0": { text: "Você é um Espresso! Direto e marcante.", img: "assets/img-quiz/cafe-expresso.png" },
     "1-0-0": { text: "Você é um Mocha! Doce e intenso.", img: "assets/img-quiz/cafe-mocha.png" },
-    "1-1-1": { text: "Você é um Café Preto! Clássico e indispensável.", img: "assets/img-quiz/cafe-preto.png" }
+    "1-1-1": { text: "Você é um Café Preto! Clássico e indispensável.", img: "assets/img-quiz/cafe-preto (1).avif" }
 };
 
 let currentQuestion = 0;
