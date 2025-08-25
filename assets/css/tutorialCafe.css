@@ -1,0 +1,133 @@
+.conteudo__tutorial {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 0 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #3e3e3e;
+}
+
+.voltar-site {
+  text-align: center;
+  margin-top: 35px;
+  font-family: "Poppins", sans-serif;
+}
+
+.voltar-site a {
+  text-decoration: underline;
+  color: #421E12;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+/* Título */
+.tutorial-cafe{
+  text-align: center;
+}
+.tutorial-cafe h1 {
+  font-size: 2.1em;
+  color: #4b1d0d;
+  font-weight: normal;
+  font-family: 'Bubblegum Sans', cursive;
+  margin-bottom: 20px;
+}
+
+.tutorial-cafe h1 span {
+  display: block;
+  font-family: 'Comforter Brush', cursive;
+  font-size: 1em;
+  color: #4b1d0d;
+}
+
+/* Carrossel */
+.carrossel-container {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.carrossel-slide {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carrossel-item {
+  flex: 0 0 100%; /* cada slide ocupa 100% do container */
+  text-align: center;
+}
+
+.carrossel-item iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9; /* mantém proporção do vídeo */
+  max-width: 800px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.video-credit {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #6b4f3b;
+  font-weight: 500;
+}
+
+/* Botões */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color:  #421E12;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  user-select: none;
+  z-index: 10;
+}
+
+.prev:hover, .next:hover {
+  background-color: #975C30;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* Responsividade */
+@media (max-width: 992px) {
+  .titulo {
+    font-size: 2.2rem;
+  }
+  .carrossel-item iframe {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .titulo {
+    font-size: 2rem;
+  }
+
+  .carrossel-item iframe {
+    aspect-ratio: 16 / 9;
+    height: auto;
+  }
+
+  .prev, .next {
+    font-size: 1.5rem;
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo {
+    font-size: 1.6rem;
+  }
+
+  .prev, .next {
+    font-size: 1.2rem;
+    padding: 6px 10px;
+  }
+}

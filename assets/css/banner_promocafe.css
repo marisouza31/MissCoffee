@@ -7,20 +7,20 @@
   justify-content: center;
   overflow: visible; /* Permitir que grãos saiam para fora */
   box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.15);
-  margin-top: 8rem;  /* aumenta a distância do topo da tela */
+  margin-top: 8rem;  
   gap: 40px; /* espaço entre texto e imagem */
 }
 
 .banner-cafe__conteudo {
   display: flex;
-  flex-direction: row; /* lado a lado */
+  flex-direction: row; 
   align-items: center;
   gap: 45px;
   margin: 0 auto;
 }
 
 .banner-cafe__texto-bloco {
-  flex: 1;              /* ocupa o espaço restante */
+  flex: 1;/* ocupa o espaço restante */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -51,12 +51,12 @@
   background-color: var(--marrom);
   color: white;
   border: none;
-  padding: 10px 20px;   /* Mais largura, mas controlada */
+  padding: 10px 20px;  
   font-size: 1em;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  max-width: 150px;     /* Limita o comprimento */
+  max-width: 150px;  
   text-align: center;  
 }
 

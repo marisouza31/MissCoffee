@@ -72,7 +72,10 @@ backBtn.addEventListener("click", () => {
 function showResult() {
     document.getElementById("quiz").style.display = "none";
     const key = answers.join("-");
-    const result = resultsMap[key] || { text: "Você é único(a)! Uma mistura especial de sabores.", img: "assets/img-quiz/cafe-emformato-coracao.png" };
+    const result = resultsMap[key] || { 
+        text: "Você é único(a)! Uma mistura especial de sabores.", 
+        img: "assets/img-quiz/cafe-emformato-coracao.png" 
+    };
 
     resultEl.innerHTML = `
         <img src="${result.img}" alt="Resultado" style="width:80px; height:auto; margin-bottom:10px;">
@@ -80,13 +83,32 @@ function showResult() {
         <button id="restartBtn">Refazer Quiz</button>
     `;
 
+    // Anúncio dinâmico
+    const adContainer = document.getElementById("ad-container");
+    const adText = adContainer.querySelector(".ad-text");
+    const adButton = adContainer.querySelector(".ad-button");
+
+    if(result.text.includes("Você é único")) {
+        adText.textContent = "🌟 Você é único(a)! Conheça nossos cafés especiais.";
+        adButton.textContent = "Clique aqui!";
+        adButton.href = "index.html#menu-cafe"
+    } else {
+        adText.textContent = "☕ Compre e experimente esse café agora!";
+        adButton.textContent = "Comprar Agora!";
+        adButton.href = "index.html#menu-cafe";
+    }
+
+    adContainer.style.display = "block";
+
     document.getElementById("restartBtn").addEventListener("click", () => {
         currentQuestion = 0;
         answers = [];
         resultEl.innerHTML = "";
         document.getElementById("quiz").style.display = "block";
+        adContainer.style.display = "none";
         loadQuestion();
     });
 }
+
 
 loadQuestion();

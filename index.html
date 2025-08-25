@@ -21,6 +21,9 @@
     <link rel="stylesheet" href="assets/css/menucafe.css" type="text/css">
     <link rel="stylesheet" href="assets/css/combos__especiais.css" type="text/css">
     <link rel="stylesheet" href="assets/css/footer.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/animacoesBanners.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/tutorialCafe.css" type="text/css">
+    <link rel="shortcut icon" href="assets/img-quiz/favicon.png" type="image/x-icon">
     <title>Miss Coffee - Cafeteria</title>
 </head>
 <body>
@@ -99,7 +102,6 @@
     <div class="conteudo">
       <div class="titulo-container">
         <h1>TRADIÇÃO <span>em cada xícara</span></h1>
-        <img src="assets/img/coracao.png" alt="Corações decorativos" class="coracoes-img">
       </div>
       <p>
         Na <strong>Miss Coffee</strong>, acreditamos que o café é mais do que uma bebida:
@@ -114,6 +116,7 @@
     <img src="assets/img/cafe-jorrado.png" alt="Imagem de café jorrado" class="imagem-final cafejorrado">
   </div>
 </section>
+ <!-- fim do Sobre nós -->
 
   <!-- Banner de tutorial de café -->
     <section class="banner-sobrenos">
@@ -124,7 +127,7 @@
         <p class="banner-cafe__texto">
           Quer fazer seu cafezinho gastando pouco? Vem com a<br> gente! A Miss Coffee te ajuda passo a passo.
         </p>
-        <button class="banner-cafe__botao">Ver tutoriais</button>
+        <button class="banner-cafe__botao"><a href="#tutorialCafe">Ver tutoriais</a></button>
       </div>
       
       <img src="assets/img/grao_cafe.png" alt="Grão de café à direita" class="grao grao-direita">
@@ -454,6 +457,76 @@
     </section>
     <!--fim da seção de combos espeicias-->
 
+    <!-- início da página de tutoriais de cafés-->
+  <section id="tutorialCafe" class="conteudo__tutorial">
+    <div class="tutorial-cafe">
+        <h1>TUTORIAL<span>DE CAFÉ</span></h1>
+    </div>
+
+  <!-- Carrossel -->
+  <div class="carrossel-container">
+    <button class="prev">&#10094;</button>
+    <div class="carrossel-slide">
+      
+      <!-- video 1 -->
+      <div class="carrossel-item">
+        <iframe 
+          src="https://www.youtube.com/embed/LelKoKPcpvw?si=la9T9f9F1zF-X5dp" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+        <p class="video-credit">Autor: Documento de Receitas</p>
+      </div>
+
+      <!-- video 2 -->
+      <div class="carrossel-item">
+        <iframe 
+          src="https://www.youtube.com/embed/7degvV5l4ng?si=fSSajq4BLPrOjhjL"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+        <p class="video-credit">Autor: Ana Zambrin</p>
+      </div>
+
+        <!-- video 3 -->
+      <div class="carrossel-item">
+        <iframe 
+          src="https://www.youtube.com/embed/pt4iWtNIXUg?si=7FhxmauRZJ3JjH_a"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+        <p class="video-credit">Autor: Starbucks Brasil</p>
+      </div>
+
+      <!-- video 4 -->
+    <div class="carrossel-item">
+      <iframe 
+        src="https://www.youtube.com/embed/2jKQJQBC3fs?si=zJDzUbojM1GIgnK6" 
+        title="4 Receitas Clássicas de Cafeteria para Fazer em Casa – Macchiato, Latte, Mocha e Affogato" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen>
+      </iframe>
+      <p class="video-credit">Autor: Coffee and Joy</p>
+    </div>
+    </div>
+    <button class="next">&#10095;</button>
+  </div>
+
+    <div class="voltar-site">
+        <a href="#home">Voltar para o inicio aqui</a>
+    </div>
+</section>
+
       <!--inicio da pagina de avaliações-->
        <section id="testimonials">
         <h2 class="avaliacoes">Avaliações:</h2>
@@ -543,7 +616,7 @@
                     </div>
 
                     <blockquote class="testimonial-quote">
-                       "Funcionários simpáticos, café fresquinho e ótimo custo-benefício. Adoro a Miss Coffe!"
+                       "Funcionários simpáticos, café fresquinho e ótimo custo-benefício. Adoro a Miss Coffee!"
                     </blockquote>
                     </div>
                 </div>
@@ -587,7 +660,7 @@
                     </div>
 
                     <blockquote class="testimonial-quote">
-                       "Miss Coffe é perfeita: café de qualidade, preços bons e equipe super prestativa."
+                       "Miss Coffee é perfeita: café de qualidade, preços bons e equipe super prestativa."
                     </blockquote>
                     </div>
                 </div>
@@ -604,7 +677,6 @@
 <!--inicio do footer-->
   <footer id="contatos" class="rodape">
         <div class="rodape__container">
-          <img src="assets/img/graos_de_cafe.png" alt="Grãos de café esparramados" class="rodape__grao1">
           <div class="rodape__infos">
             <h2 class="rodape__titulo">Nossos Contatos:</h2>
             <ul class="rodape__lista">
@@ -617,9 +689,6 @@
                 <p class="rodape__lista--txt">misscoffee@gmail.com</p>
               </li>
               <li class="rodape__lista--item">
-                <p class="rodape__lista--txt">Endereço:</p>
-              </li>
-              <li class="rodape__lista--item">
                 <img src="assets/img/icone_localização.png" alt="Icone de localização" class="rodape__lista--img">
                 <p class="rodape__lista--txt">Rua Lapa Tito 45, Vila Romana</p>
               </li>
@@ -629,7 +698,10 @@
               </li>
             </ul>
           </div>
-          <img src="assets/img/back_graos.png" alt="Grãos de café esparramados" class="rodape__grao2">
+        </div>
+          <!-- Sub-footer -->
+        <div class="rodape__copy">
+          <p>© 2025 Miss Coffee - Todos os direitos reservados.</p>
         </div>
   </footer>
   <!--fim do footer-->
@@ -642,12 +714,16 @@
   <!--inicio do script do menu-->
     <script src="assets/scripts/menulateral.js"></script>
     <!--fim do script do menu-->
+    
+     <!--inicio do script de tutorial de cafe-->
+    <script src="assets/scripts/tutorialCafe.js"></script>
+    <!--fim do script de tutorial de cafe-->
 
-    <!--inicio do script de animações-->
-    <script src="assets/scripts/animacoes.js"></script>
-    <!--fim do script de animações-->
+    <!--inicio do script de animação-->
+    <script src="assets/scripts/animacao.js"></script>
+     <!--fim do script de animação-->
 
-      <!--api de libras-->
+      <!-- inicio da api de libras-->
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
         <div vw-plugin-wrapper>

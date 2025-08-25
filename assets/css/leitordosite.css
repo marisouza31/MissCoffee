@@ -6,6 +6,10 @@
   font-family: Arial, sans-serif;
 }
 
+.leitor-tela-container * {
+    font-weight: normal !important;
+}
+
 .leitor-toggle {
   background-color: #0050A1;
   color: white;

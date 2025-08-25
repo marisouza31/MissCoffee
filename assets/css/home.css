@@ -15,6 +15,10 @@
   box-sizing: border-box;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 /* NAV PRINCIPAL */
 .cabecalho__nav {
   position: fixed;
@@ -106,7 +110,7 @@ main {
 }
 
 .conteudo__home--selo img {
-  width: 90px;  
+  width: 100px;  
   height: auto; 
   transition: transform 0.3s ease;
   cursor: pointer;
@@ -128,23 +132,23 @@ main {
     display: block;
   }
 
-  /* Esconde menu completo */
-  .cabecalho__nav--lista {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-    background-color: var(--branco);
-    padding: 10px 0;
-    gap: 10px;
-    border-top: 1px solid #ccc;
-    
-  }
+ /* Lista inicial escondida */
+.cabecalho__nav--lista {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: max-height 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
+}
 
-  /* Mostra quando ativo */
-  .cabecalho__nav--lista.active {
-    display: flex;
-  }
+/* Lista ativa */
+.cabecalho__nav--lista.active {
+  max-height: 1000px; /* bem grande para caber todos os links */
+  opacity: 1;
+  transform: translateY(0);
+}
 
   .cabecalho__lista--link {
   text-decoration: none;
@@ -183,23 +187,33 @@ main {
     order: 3;
   }
 
-  .cabecalho__nav--lista {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-    padding: 10px 0;
-    gap: 10px;
-    border-top: 1px solid #ccc;
-    order: 4;
-  }
+  /*menu aparece suavemente e desaparece quando clicado*/
+ .cabecalho__nav--lista {
+  position: absolute;
+  top: 70px; /* abaixo do cabeçalho */
+  left: 0;
+  width: 100%;
+  flex-direction: column;
+  background: #fff;
+  border-top: 1px solid #ccc;
+  gap: 15px;
+  padding: 20px 0;
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  z-index: 998;
+}
 
   .cabecalho__nav--lista.active {
-    display: flex;
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
   }
 
+
 .conteudo__home--selo img {
-  width: 75px;  
+  width: 80px;  
   height: auto; 
   transition: transform 0.3s ease;
   cursor: pointer;
@@ -256,6 +270,7 @@ main {
     display: flex;
     flex-direction: column;
     margin-top: 100px;  /* aumenta a distância do topo da tela */
+    animation: slideFromLeft 0.5s ease-out forwards;
 }
 
 
@@ -308,10 +323,39 @@ main {
     width: 500px;
     position: absolute;
     right: 0px;
+    top: 50px;
 }
 
 .conteudo__img--cel{
   display: none;
+}
+
+.conteudo__img--xicara, .conteudo__img--fundo{
+  animation: slideFromRight 0.5s ease-out forwards;
+}
+
+/* ANIMAÇÕES  */
+
+@keyframes slideFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideFromRight {
+  0% {
+    transform: translateX(100%); /* começa fora da tela pela direita */
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0); /* posição normal */
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 1660px){
