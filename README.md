@@ -52,4 +52,15 @@ Criar uma plataforma digital que proporcione:
 - Leticia Miguel
 - Alinne Fernandes
 - Christian Ramon
+  ##
+<div align="center">
+  <h4>Contato</h4>
+  </div>
+
+   Obrigada por visitar o meu repositório, caso queira se conectar comigo, estou disponíveil através do e-mail e LinkedIn!
+
+  **Mariana Ocireu:**
+
+[![Linkedin](https://img.shields.io/badge/LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/marianaociz/)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:marianaocireu@gmail.com)
 
