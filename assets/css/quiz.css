@@ -208,7 +208,7 @@
     }
 
     #ad-container .ad-banner {
-        width: 95%;      /* ocupa quase toda a largura */
+        width: 90%;      /* ocupa quase toda a largura */
         max-width: 320px; /* limite para não ficar gigante */
         padding: 12px 15px;
     }
