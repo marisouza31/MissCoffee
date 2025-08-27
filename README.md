@@ -1,4 +1,4 @@
-# ☕ Miss Coffee - Cafeteria Online  
+# ☕ Miss Coffee - Cafeteria Online 
 
 Bem-vindo ao **Miss Coffee**, um projeto de cafeteria online **pensada para todos**.  
 Nosso objetivo é oferecer um site **intuitivo, acessível e acolhedor**, no qual a 
