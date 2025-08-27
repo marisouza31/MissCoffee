@@ -48,7 +48,7 @@ Criar uma plataforma digital que proporcione:
 
 - Mariana Ocireu  
 - Nicolas Coelho
-- Kayke Junior
+- Kayk Junior
 - Leticia Miguel
 - Alinne Fernandes
 - Christian Ramon
@@ -57,10 +57,24 @@ Criar uma plataforma digital que proporcione:
   <h4>Contato</h4>
   </div>
 
-   Obrigada por visitar o meu repositório, caso queira se conectar comigo, estou disponíveil através do e-mail e LinkedIn!
+   Obrigada por visitar o nosso repositório, caso queira se conectar com a gente, estamos disponíveis através do e-mail e LinkedIn!
 
   **Mariana Ocireu:**
 
 [![Linkedin](https://img.shields.io/badge/LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/marianaociz/)
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:marianaocireu@gmail.com)
+
+  **Nicolas Coelho:**
+
+[![Linkedin](https://img.shields.io/badge/LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nicolascoelho/)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:nicolas11coelho@gmail.com)
+
+
+  **Kayk Junior:**
+
+[![Linkedin](https://img.shields.io/badge/LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white)]()
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:Kaykjunior242@gmail.com)
+
+
+
 
